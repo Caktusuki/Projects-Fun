@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Sketch&family=Poppins:wght@700&family=Silkscreen:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5dc;
+}
+
+h1, h2, h3 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+button {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+  font-family: 'Londrina Sketch', cursive;
+}
+
+code {
+  font-family: 'Silkscreen', cursive;
+}
+
+.app {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+.header-image {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; /* Adjust this value to make it smaller */
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 100%; /* Ensure it doesn't stretch beyond the container */
+  height: auto;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.choices button {
+  width: 120px;
+  height: 120px;
+  background: none;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+  font-size: 24px;
+  font-family: 'Londrina Sketch', cursive;
+}
+
+.choices img {
+  width: 80px;
+  height: 80px;
+}
+
+.choices button:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.1);
+}
+
+.scoreboard, .results {
+  margin: 20px;
+}
+
+.results {
+  font-size: 18px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
