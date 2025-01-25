@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Sketch&family=Poppins:wght@700&family=Silkscreen:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+button {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+  font-family: 'Londrina Sketch', cursive;
+}
+
+code {
+  font-family: 'Silkscreen', cursive;
+}
+
+.app {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.header-image {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 20px; /* Added curve to the image */
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.scoreboard {
+  font-size: 18px;
+  color: #333;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.choices button {
+  width: 120px; /* Size of the button */
+  height: 120px; /* Size of the button */
+  background-color: #fff; /* White background for the button */
+  border: 2px solid #000000;
+  border-radius: 20px; /* Added curve to the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for aesthetic look */
+}
+
+.choices img {
+  width: 60px;  /* Icon size */
+  height: 60px; /* Icon size */
+}
+
+.choices button:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.1); /* Slightly enlarge button on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.reset-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.reset-button {
+  background-color: #fff;
+  border: 2px solid #000; /* Same border style as other buttons */
+  padding: 10px 20px;
+  border-radius: 20px; /* Same rounded corners as the other buttons */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .choices button {
+    width: 100px; /* Smaller square button */
+    height: 100px; /* Smaller square button */
+  }
+
+  .choices img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .game-image {
+    max-width: 80%;
+  }
+}
